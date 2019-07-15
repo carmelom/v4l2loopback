@@ -2282,7 +2282,7 @@ static const struct v4l2_file_operations v4l2_loopback_fops = {
 
 static const struct v4l2_ioctl_ops v4l2_loopback_ioctl_ops = {
 	.vidioc_querycap         = &vidioc_querycap,
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(2, 6, 29)
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 7, 0)
 	.vidioc_enum_framesizes  = &vidioc_enum_framesizes,
 	.vidioc_enum_frameintervals = &vidioc_enum_frameintervals,
 #endif
